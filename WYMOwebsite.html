@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="WYMOwebsite.css">
+        <title> Wai-Yip Mo (Alex) </title>
+    </head>
+
+    <body>
+        <div class="image-bgd">
+            <!-- Slide 1 -->
+            <div class="slds active">
+                <div class="row">
+                    <table class="single_row">
+                        <tr>
+                            <th style="text-align: right;">
+                                <h1> Wai-Yip Mo </h1>
+                                <h2> (Alex Mo) </h2>
+                            </th>
+                            <th>
+                            </th>
+                        </tr>
+                    </table>
+                    <img class="profile_img" src="Photos/profile-2.png">
+                </div>
+
+            </div>
+            <!-- Slide 2 -->
+            <div class="slds">
+                <table class="single_row">
+                    <tr>
+                        <th> </th>
+                        <th>
+                            <h1 style="text-align: left;">Over decades, emerging technology and ever-changing economies significantly impact real estate sectors. Models that worked yesterday may not work well tomorrow.</h1>
+                            <h2> - Popularization of Online Shopping </h2>
+                            <h2> - Hybrid Working </h2>
+                            <h2> - Quantitative Easing vs Quantitative Tightening </h2>
+                        </th>
+                    </tr>
+                </table>
+                <img class="top_left_img" src="Photos/Vacant Shop.jpg">
+                <img class="bottom_left_img" src="Photos/vacant Office.jpg">
+            </div>
+            <!-- Slide 3 -->
+            <div class="slds">
+                <img class="img1" src="Photos/HongKong.jpg">
+                <img class="img2" src="Photos/Great Wall.jpg">
+                <img class="img3" src="Photos/KAifeng.JPG">
+                <img class="img4" src="Photos/Wuhan.JPG">
+                <img class="img5" src="Photos/Guilin.JPG">
+                <img class="img6" src="Photos/Thailand.jpg">
+                <img class="img7" src="Photos/Singapore.jpg">
+                <img class="img8" src="Photos/London.jpg">
+                <div class="top_left_table">
+                    <h2 style="color: white;"> Strategy / Concept That Always Works </h2>
+                    <p> &#10004 Prudent Economic Forecast </p>
+                    <p> &#10004 Prudent Investment </p>
+                    <p> &#10004 Prudent Transformation </p>
+                    <p> &#10004 Tailor-made Programming </p>
+                </div>
+                <div class="top_right_table">
+                    <h2 style="color: red;"> Observed Strategy / Concept That May Not Work Very Well </h2>
+                    <p> - Large-firm Research </p>
+                    <p> - Planning Economy </p>
+                    <p> - Supply Driven Expansion </p>
+                    <p> - Asset Bubble </p>
+                    <p> - Credit Boom </p>
+                    <p> - Co-working </p>
+                    <p> - Flexible Workspace </p>
+                </div>
+                <div class="bottom_line">
+                    <h1> Many face strong headwinds, while only a few succeed in seizing those opportunities. </h1>
+                </div>
+
+            </div>
+            <!-- Slide 4 -->
+            <div class="slds">
+                <table>
+                    <tr>
+                        <th>
+                            <h1> The only clue to overcome the challenges is to equip ourselves with a broad range of knowledge </h1>
+                            <h1> and to apply them prudently. </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="single_row">
+                                <tr>
+                                    <th> </th>
+                                    <th>
+                                        <h2> Professional Qualification (Gained in Earlier Years) </h2>
+                                        <h3> CFA: Basic Understanding of Financial Market</h3>
+                                        <h3> FRM: Strenthening on Risk Management </h3>
+                                        <h3> MRICS: Basic Knowledge of Real Estate Market </h3>
+                                        <hr>
+                                        <h2> Computer Skills & Technology (Ongoing Development) </h2>
+                                        <h3> Microsoft Office, ARGUS Enterprise, ARGUS Developer </h3>
+                                        <h3> Excel Modelling for high efficiency of cash flow projection </h3>
+                                        <h3> HTML (this website) just for fun </h3>
+                                        <h3> Python and other programming language still developing  </h3>
+                                    </th>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <img class="coin_img" src="Photos/UST Coin.JPG">
+            </div>
+            <!-- Slide 5 -->
+
+            <div class="slds">
+                <h1> Contact </h1>
+                <h2> Mobile: (+44) 7506 822826 </h2>
+                <h2> Email: <a href="mailto:alexwymo220@gmail.com" >alexwymo220@gmail.com</a> </h2>
+            </div>
+            <!-- left and right buttons -->
+
+            <button class="previous" onclick="prevSlide()"> < </button>
+            <button class="next" onclick="nextSlide()"> > </button>
+
+        </div>
+        <script>
+            let pg = 0;
+            const slides = document.querySelectorAll('.slds');
+
+            function showSlide(n) {
+               slides[pg].classList.remove('active');
+               pg = (n + slides.length) % slides.length;
+               slides[pg].classList.add('active');
+            }
+
+            function prevSlide() {
+               showSlide(pg - 1);
+            }
+
+            function nextSlide() {
+               showSlide(pg + 1);
+            }
+            showSlide(pg);
+         </script>
+    </body>
+</html>
+
+

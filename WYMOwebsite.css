@@ -1,0 +1,189 @@
+
+.profile_img {
+    position: fixed;
+    left: 60%;
+    top: 25%;
+    height: 50%
+}
+.top_left_img, .bottom_left_img {
+    position: fixed;
+    left: 15%;
+    width: 30%;
+}
+.top_left_img {
+    top: 5%;
+}
+.bottom_left_img{
+    top: 52.5%;
+}
+
+.img1 {
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top: 28%;
+    width: 20%
+}
+
+.img2 {
+    position: fixed;
+    z-index: 2;
+    left: 48%;
+    top: 30%;
+    width: 18%
+}
+.img3 {
+    position: fixed;
+    z-index: 3;
+    left: 60%;
+    top: 45%;
+    width:22.5%
+}
+.img4 {
+    position: fixed;
+    z-index: 4;
+    left: 45%;
+    top: 7.5%;
+    width: 17.5%;
+}
+.img5 {
+    position: fixed;
+    z-index: 5;
+    left: 60%;
+    top: 7%;
+    width:20%
+}
+.img6 {
+    position: fixed;
+    z-index: 6;
+    left: 35%;
+    top: 49%;
+    width: 15%;
+}
+.img7 {
+    position: fixed;
+    z-index: 7;
+    left: 15%;
+    top: 42.5%;
+    width: 18%;
+}
+.img8 {
+    position: fixed;
+    z-index: 8;
+    left: 15%;
+    top: 5%;
+    width: 20%
+}
+.coin_img {
+    position: fixed;
+    left: 17.5%;
+    width: 30%;
+    bottom:15%;
+}
+.top_left_table, .top_right_table {
+    position: fixed;
+    top: 10%;
+    z-index: 9;
+    width: 35%;
+    height: 55%;
+    font-size: 2.5vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.top_left_table {
+    color: white;
+    left: 12.5%;
+}
+.top_right_table {
+    color: red;
+    left: 52.5%;
+}
+.bottom_line {
+    position: fixed;
+    width: 80%;
+    left: 12.5%;
+    bottom: 15%;
+}
+h1 {
+    color: darkred;
+    font-size: 4vh;
+}
+h2 {
+    color: darkblue;
+    font-style: bold;
+    font-size: 3vh;
+}
+h3 {
+    color: blue;
+    font-style: bold;
+    font-size: 2.5vh;
+}
+.row {
+    display: flex;
+    vertical-align: middle;
+}
+.column {
+    flex: 1;
+    padding: 1em;
+    width: 60%;
+    margin: 3%;
+    vertical-align: middle;
+}
+.single_row {
+    table-layout: fixed;
+    width: 80%;
+    margin: 0 auto;
+}
+.single_col {
+    table-layout: fixed;
+    width: 90%;
+    margin: 0 auto;
+}
+.col_image {
+    position: relative;
+    margin: 2%;
+    width: 50%;
+}
+
+.previous,.next {
+    position: fixed;
+    top: 40%;
+    background-color: darkgrey;
+    flex-shrink: 0;
+    font: caption;
+    font-size: 3.5vh;
+    padding: 0%;
+    opacity: 85%;
+    cursor: pointer;
+    border: none;
+    height: 15%;
+    width: 3%;
+    transition: background-color 0.2s;
+}
+.previous:hover, .next:hover {
+    background-color: white;
+    opacity: 50%;
+    cursor: pointer;
+}
+.previous {
+    left: 5%;
+}
+.next {
+    right: 5%;
+}
+.image-bgd {
+    background-image: url(Photos/Background_adj.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slds {
+    display: none;
+    text-align: center;
+}
+.slds.active {
+    display: block;
+}
